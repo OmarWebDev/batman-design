@@ -1,0 +1,48 @@
+.card {
+    display: flex;
+    border-radius: 8px;
+    gap: 10px;
+    color: white;
+    border: 1px solid @dark;
+    background: #000;
+    img {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        width: 200px;
+    }
+    > div {
+        margin: 10px 0;
+        > * {
+            margin: 10px 0;
+
+        }
+        .topics {
+            color: @dark;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            font-size: 13px;
+            margin: 10px 0;
+        }
+        h4 {
+            font-size: 28px;
+        }
+        .stars {
+            span {
+                color: @primary;
+                font-weight: bold;
+            }
+        }
+        .desc {
+            color: @dark;
+        }
+        .buttons {
+            display: flex;
+            // margin: 5px 10px;
+            margin-right: 10px;
+            gap: 10px;
+            button {
+                width: 50%;
+            }
+        }
+    }
+}
